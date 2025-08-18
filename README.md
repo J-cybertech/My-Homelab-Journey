@@ -3,6 +3,9 @@
   Project Description
         Creating a HyperVm that's running Debian 12 no GUI, hosting CasaOS to manage several other projects. Used HyperVm for the purpose of learning another virtual host other then VirtualBox. With HyperVm I learned the difference between the three virtual switches: External, Internal, Private. CasaOS is a open-source community project that allows you to build a personal cloud system in a docker ecosystem; which is super user-friendly. Once installed you can browse "apps" that are included in the "App store". You are able to add more packages from the [Casa github repo](https://awesome.casaos.io/content/3rd-party-app-stores/list.html#_2-casaos-appstore-play). 
 
+![Alt text](images/casaos.png)
+
+
 #      Other projects 
   [![Pi-Hole](https://img.shields.io/badge/pihole-%2396060C.svg?style=for-the-badge&logo=pi-hole&logoColor=white/)](https://pi-hole.net/)
  [![Twingate](https://img.shields.io/badge/Twingate-FFFFFF?style=for-the-badge&logo=susetwingate&logoColor=000000)](https://www.twingate.com)
