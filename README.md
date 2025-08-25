@@ -1,7 +1,6 @@
 # CasaOS-Project
 
-  Project Description
-        Creating a HyperVm that's running Debian 12 no GUI, hosting CasaOS to manage several other projects. Used HyperVm for the purpose of learning another virtual host other then VirtualBox. With HyperVm I learned the difference between the three virtual switches: External, Internal, Private. CasaOS is a open-source community project that allows you to build a personal cloud system in a docker ecosystem; which is super user-friendly. Once installed you can browse "apps" that are included in the "App store". You are able to add more packages from the [Casa github repo](https://awesome.casaos.io/content/3rd-party-app-stores/list.html#_2-casaos-appstore-play). 
+  Creating a HyperVm that's running Debian 12 no GUI, hosting CasaOS to manage several other projects. Used HyperVm for the purpose of learning another virtual host other then VirtualBox. With HyperVm I learned the difference between the three virtual switches: External, Internal, Private. CasaOS is a open-source community project that allows you to build a personal cloud system in a docker ecosystem; which is super user-friendly. Once installed you can browse "apps" that are included in the "App store". You are able to add more packages from the [Casa github repo](https://awesome.casaos.io/content/3rd-party-app-stores/list.html#_2-casaos-appstore-play). 
 
 ![Alt text](images/casaos.png)
 
@@ -12,8 +11,7 @@
 [![RustDesk](https://img.shields.io/badge/RustDesk-1296DB?style=for-the-badge&logo=rustdesk)](https://rustdesk.com)
 [![Tailscale](https://img.shields.io/badge/Tailscale-000000?style=for-the-badge&logo=tailscale)](https://tailscale.com)
 
-![Alt text](images/pihole-unbound.png)
- As I started my journey in learning more about this field, I wanted an aternative way to remote into my network that's more secure then just leaving my network open. I found [YouTube](https://youtu.be/sax55mrOX54?si=Sw2JB6fEf78CMCiX) which lead me into this rabbit hole of information. I've started by setting up Windows Firewall rules, changed RDP port within registry editor. Made sure my account has a strong passwords to minimize risk and used network-level authentication when enabling remote access. After a few months in this project I've notice alot of security logs from overseas like Bulgaria, Belgium, England, Luxembourg to name a few places. Trying to login with users like admin/administrator. While my OPSEC was strong, I wanted to reduce the risk futher. I've learned how to block ip address but without a Firewall router it would still be a pain. So I've looked into tailscale and twingate. 
+ As I started my journey in learning more about this field, I wanted an aternative way to remote into my network that's more secure then just leaving my network open. I found this [video](https://youtu.be/sax55mrOX54?si=Sw2JB6fEf78CMCiX) which lead me into this rabbit hole of information. I've started by setting up Windows Firewall rules, changed RDP port within registry editor. Made sure my account has a strong passwords to minimize risk and used network-level authentication when enabling remote access. After a few months in this project I've notice alot of security logs from overseas like Bulgaria, Belgium, England, Luxembourg to name a few places. Trying to login with users like admin/administrator. While my OPSEC was strong, I wanted to reduce the risk futher. I've learned how to block ip address but without a Firewall router it would still be a pain. So I've looked into hosting tailscale and twingate. 
 
 ## 🔐 Twingate vs Tailscale
 
@@ -26,6 +24,22 @@
 | **Platform Support**    | Windows, macOS, Linux, iOS, Android, Synology, etc. | Wide OS support, strong enterprise identity integrations |
 | **Pricing**             | Generous free tier; affordable paid plans | Free tier + paid plans for advanced features |
 | **Best For**            | Individuals, small teams, developers | Enterprises, organizations needing strict access controls |
+
+Deploy a recursive Pi-Hole DNS sinkhole on a Raspberry Pi to improve network security by blocking unwanted ads, tracking domains, and malicious websites. Configure Pi-Hole to filter DNS requests at the network level, preventing devices from accessing harmful or undesirable content. Regularly update blocklists and fine-tune settings to optimize performance, reduce security vulnerabilities, and ensure the protection of all connected devices from potential threats.
+![Alt text](images/pihole-unbound.png)
+
+##  Pi-hole + Unbound (pihole-unbound)
+
+| Feature / Factor             | Description |
+|------------------------------|-------------|
+| **What It Is**               | A setup that combines Pi-hole with Unbound, a validating recursive DNS resolver, allowing Pi-hole to resolve queries without relying on external DNS providers. :contentReference[oaicite:0]{index=0} |
+| **Privacy & Security**       | Since Unbound performs lookups directly from root servers, it prevents upstream DNS logging and mitigates threats like DNS cache poisoning—enhancing privacy. :contentReference[oaicite:1]{index=1} |
+| **DNSSEC Validation**        | Unbound provides DNSSEC support, allowing Pi-hole to verify authenticity of DNS responses, filtering out fraudulent or altered responses. :contentReference[oaicite:2]{index=2} |
+| **Performance & Caching**    | Initial queries may be slower, but once cached, subsequent lookups are efficient—typically under 0.1 seconds. :contentReference[oaicite:3]{index=3} |
+| **Setup Simplicity**         | Straightforward to set up on Debian/Ubuntu: install with `apt`, add Unbound config, and point Pi-hole at `127.0.0.1#5335`. :contentReference[oaicite:4]{index=4} |
+| **Docker Integration**       | Several containerized options exist:
+
+
 
  
  ---- (add another project here, how to enable RDP and have it open to the internet)
