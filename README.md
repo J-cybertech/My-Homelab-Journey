@@ -1,3 +1,32 @@
+# 🏠 My Homelab Journey
+
+After experimenting with port forwarding and remote desktop access, I realized how exposed my network was to the internet. I wanted a **more secure, flexible, and private way to run services at home**. Over time, I built a homelab stack using **Proxmox**, **CasaOS**, **Pi-hole**, and **Tailscale**, with **Twingate** as an alternative VPN solution for more enterprise-grade zero-trust security.
+
+---
+
+## 🔧 How Each Tool Helps
+
+| Tool       | Role in My Homelab |
+|------------|------------------|
+| **Proxmox** | Runs multiple virtual machines and containers on a single server, letting me isolate services safely. |
+| **CasaOS** | Provides a user-friendly dashboard to manage apps and storage without digging into the command line. |
+| **Pi-hole** | Blocks ads and trackers network-wide while giving me insight and control over DNS traffic. |
+| **Tailscale** | Creates a secure, zero-config VPN for remote access, replacing risky port forwarding. |
+| **Twingate** | Alternative VPN option with a zero-trust model, granular access controls, and detailed audit logging. |
+
+---
+
+## 🚀 Why I Chose This Stack
+- Consolidates workloads and isolates services safely with **Proxmox**.  
+- Makes app deployment and storage management easy with **CasaOS**.  
+- Protects my privacy and network with **Pi-hole**.  
+- Enables secure remote access without opening my network to the world using **Tailscale** or **Twingate**, depending on my needs.  
+
+This setup lets me experiment, learn, and run a fully functional home server environment while keeping security and privacy top of mind.
+
+
+
+
 # CasaOS-Project
 
   Creating a HyperVm that's running Debian 12 no GUI, hosting CasaOS to manage several other projects. Used HyperVm for the purpose of learning another virtual host other then VirtualBox. With HyperVm I learned the difference between the three virtual switches: External, Internal, Private. CasaOS is a open-source community project that allows you to build a personal cloud system in a docker ecosystem; which is super user-friendly. Once installed you can browse "apps" that are included in the "App store". You are able to add more packages from the [Casa github repo](https://awesome.casaos.io/content/3rd-party-app-stores/list.html#_2-casaos-appstore-play). 
