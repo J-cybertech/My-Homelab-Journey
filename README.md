@@ -68,6 +68,9 @@ Deploy a recursive Pi-Hole DNS sinkhole to improve network security by blocking 
 | **Setup Simplicity**         | Straightforward to set up on Debian/Ubuntu: install with `apt`, add Unbound config, and point Pi-hole at `127.0.0.1#5335`. :contentReference[oaicite:4]{index=4} |
 | **Docker Integration**       | Several containerized options exist:
 
-Video credit: [@jerryboutot](https://www.youtube.com/channel/UCu10mLMkrrYaVKUYeK4h6dg)
 
-Video credit: [@NetworkChuck](https://www.youtube.com/@NetworkChuck)
+
+Shoutout to [@NetworkChuck](https://www.youtube.com/@NetworkChuck)! 🙌  
+I learned a ton from their content while building my homelab. If you’re into tech, homelabs, or just love tinkering, give their channel a watch. 🚀
+
+Video credit to [@jerryboutot](https://www.youtube.com/channel/UCu10mLMkrrYaVKUYeK4h6dg)
