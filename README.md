@@ -39,7 +39,7 @@ This setup lets me experiment, learn, and run a fully functional home server env
  [![Twingate](https://img.shields.io/badge/Twingate-FFFFFF?style=for-the-badge&logo=susetwingate&logoColor=000000)](https://www.twingate.com)
 [![Tailscale](https://img.shields.io/badge/Tailscale-000000?style=for-the-badge&logo=tailscale)](https://tailscale.com)
 
- As I started my journey in learning more about this field, I wanted an aternative way to remote into my network that's more secure then just leaving my network open. I found this [video](https://youtu.be/sax55mrOX54?si=Sw2JB6fEf78CMCiX) which lead me into this rabbit hole of information. I've started by setting up Windows Firewall rules, changed RDP port within registry editor. Made sure my account has a strong passwords to minimize risk and used network-level authentication when enabling remote access. After a few months in this project I've notice alot of security logs from overseas like Bulgaria, Belgium, England, Luxembourg to name a few places. Trying to login with users like admin/administrator. While my OPSEC was strong, I wanted to reduce the risk futher. I've learned how to block ip address but without a Firewall router it would still be a pain. So I've looked into hosting tailscale and twingate. 
+ As I started my journey in learning more about this field, I wanted an alternative way to remote into my network that's more secure than just leaving my network open. I found this [video](https://youtu.be/sax55mrOX54?si=Sw2JB6fEf78CMCiX) which led me into this rabbit hole of information. I've started by setting up Windows Firewall rules, changed RDP port within registry editor. Made sure my account has a strong password to minimize risk and used network-level authentication when enabling remote access. After a few months in this project, I've noticed a lot of security logs from overseas like Bulgaria, Belgium, England, Luxembourg to name a few places. Trying to login with users like admin/administrator. While my OPSEC was strong, I wanted to reduce the risk further. I've learned how to block ip address but without a Firewall router it would still be a pain. So, I've looked into hosting Tailscale and Twingate.
 
 ## 🔐 Twingate vs Tailscale
 
@@ -53,7 +53,7 @@ This setup lets me experiment, learn, and run a fully functional home server env
 | **Pricing**             | Generous free tier; affordable paid plans | Free tier + paid plans for advanced features |
 | **Best For**            | Individuals, small teams, developers | Enterprises, organizations needing strict access controls |
 
-Deploy a recursive Pi-Hole DNS sinkhole on a Raspberry Pi to improve network security by blocking unwanted ads, tracking domains, and malicious websites. Configure Pi-Hole to filter DNS requests at the network level, preventing devices from accessing harmful or undesirable content. Regularly update blocklists and fine-tune settings to optimize performance, reduce security vulnerabilities, and ensure the protection of all connected devices from potential threats.
+Deploy a recursive Pi-Hole DNS sinkhole to improve network security by blocking unwanted ads, tracking domains, and malicious websites. Configure Pi-Hole to filter DNS requests at the network level, preventing devices from accessing harmful or undesirable content. Regularly update blocklists and fine-tune settings to optimize performance, reduce security vulnerabilities, and ensure the protection of all connected devices from potential threats. 
 
 ![Alt text](images/pihole-unbound.png)
 
