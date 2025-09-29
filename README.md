@@ -1,5 +1,7 @@
 # 🏠 My Homelab Journey
 
+![Alt text](images/proxmox.png)
+
 After experimenting with port forwarding and remote desktop access, I realized how exposed my network was to the internet. I wanted a **more secure, flexible, and private way to run services at home**. Over time, I built a homelab stack using **Proxmox**, **CasaOS**, **Pi-hole**, and **Tailscale**, with **Twingate** as an alternative VPN solution for more enterprise-grade zero-trust security.
 
 ---
