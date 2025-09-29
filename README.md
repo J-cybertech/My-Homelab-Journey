@@ -63,12 +63,11 @@ Deploy a recursive Pi-Hole DNS sinkhole to improve network security by blocking 
 
 | Feature / Factor             | Description |
 |------------------------------|-------------|
-| **What It Is**               | A setup that combines Pi-hole with Unbound, a validating recursive DNS resolver, allowing Pi-hole to resolve queries without relying on external DNS providers. :contentReference[oaicite:0]{index=0} |
-| **Privacy & Security**       | Since Unbound performs lookups directly from root servers, it prevents upstream DNS logging and mitigates threats like DNS cache poisoning—enhancing privacy. :contentReference[oaicite:1]{index=1} |
-| **DNSSEC Validation**        | Unbound provides DNSSEC support, allowing Pi-hole to verify authenticity of DNS responses, filtering out fraudulent or altered responses. :contentReference[oaicite:2]{index=2} |
-| **Performance & Caching**    | Initial queries may be slower, but once cached, subsequent lookups are efficient—typically under 0.1 seconds. :contentReference[oaicite:3]{index=3} |
-| **Setup Simplicity**         | Straightforward to set up on Debian/Ubuntu: install with `apt`, add Unbound config, and point Pi-hole at `127.0.0.1#5335`. :contentReference[oaicite:4]{index=4} |
-| **Docker Integration**       | Several containerized options exist:
+| **What It Is**               | A setup that combines Pi-hole with Unbound, a validating recursive DNS resolver, allowing Pi-hole to resolve queries without relying on external DNS providers.  |
+| **Privacy & Security**       | Since Unbound performs lookups directly from root servers, it prevents upstream DNS logging and mitigates threats like DNS cache poisoning—enhancing privacy.  |
+| **DNSSEC Validation**        | Unbound provides DNSSEC support, allowing Pi-hole to verify authenticity of DNS responses, filtering out fraudulent or altered responses.  |
+| **Performance & Caching**    | Initial queries may be slower, but once cached, subsequent lookups are efficient—typically under 0.1 seconds.  |
+| **Setup Simplicity**         | Straightforward to set up on Debian/Ubuntu: install with `apt`, add Unbound config, and point Pi-hole at `127.0.0.1#5335`.  |
 
 
 
