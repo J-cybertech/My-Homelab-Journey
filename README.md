@@ -75,3 +75,7 @@ Shoutout to [@NetworkChuck](https://www.youtube.com/@NetworkChuck)! 🙌
 I learned a ton from their content while building my homelab. If you’re into tech, homelabs, or just love tinkering, give their channel a watch. 🚀
 
 Video credit to [@jerryboutot](https://www.youtube.com/channel/UCu10mLMkrrYaVKUYeK4h6dg)
+
+## Network Upgrade
+![Alt text](images/Network_Diagram.png)
+![Alt text](images/UniFi.jpeg)
